@@ -1,0 +1,304 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: linear-gradient(135deg, #fceabb, #f8b500);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon{
+	width: 75px;
+    float: left;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+}
+
+.logo{
+	cursor: pointer;
+}
+
+.nav{
+	overflow: hidden;
+    background: #005f73;
+    width: 100%;
+    max-width: 1920px;
+    color: white;
+}
+
+.nav a,h1{
+	float: left;
+    text-align: center;
+    padding: 40px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.nav a{
+	color: white;
+	padding: 47px 30px;
+	transition: color 0.3s;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.nav a::after{
+	content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffb703;
+    transition: width 0.3s;
+    margin: auto;
+}
+
+.nav a:hover::after{
+	width: 100%;
+}
+
+h1{
+	text-transform: uppercase;
+	font-size: 35px;
+	padding-right: 125px;
+	padding-left: 20px;
+}
+
+/* index.html */
+
+.wel{
+	font-size: 35px;
+}
+
+p{
+	font-size: 20px;
+}
+
+.welcome{
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 5%;
+}
+
+.name-board{
+	margin-top: 20px;
+	width: 1000px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #0096F8;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.5s;
+    font-size: 20px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #55BCFF;
+}
+
+footer{
+	background: #000;
+	text-align: center;
+	padding: 20px 0px;
+	margin-top: auto;
+	width: 100%;
+}
+
+footer p{
+	color: #d8d8d8;
+	font-size: 18px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* about.html */
+
+#about{
+	margin-left: 5%;
+	margin-right: 5%;
+	line-height: 1.8rem;
+}
+
+.about{
+	text-align: center;
+	padding-top: 100px;
+}
+
+h2{
+	font-size: 50px;
+	color: #005f73;
+	font-weight: 800;
+}
+
+.content{
+	font-size: 22px;
+	text-align: left;
+}
+
+.subtitle{
+	color: #005f73;
+	text-align: left;
+	font-size: 40px;
+	font-weight: 800;
+}
+
+ul li{
+	text-align: left;
+	font-size: 22px;
+	margin-left: 5%;
+	list-style: none;
+	line-height: 1.4em;
+}
+
+ul li::before {
+	margin-left: 5%;
+    content: "✔️";
+    position: absolute;
+    left: 0;
+}
+
+/* contact.html */
+
+#contact{
+	margin-left: 5%;
+	margin-right: 5%;
+	line-height: 1.8rem;
+}
+
+.contact{
+	text-align: center;
+	padding-top: 100px;
+}
+
+.info-item h4{
+	font-size: 30px;
+	color: #005f73;
+	font-weight: 800;
+}
+
+.container p{
+	font-size: 21px;
+}
+
+.container a{
+	text-decoration: none;
+	color: black;
+}
+
+.container{
+	display: flex;
+	justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info-item{
+	flex: 1;
+    min-width: 250px;
+    margin: 20px 10px;
+    background-color: #fff;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-item:hover{
+	transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus, textarea:focus {
+    border-color: #457b9d;
+    outline: none;
+}
+
+button {
+    padding: 12px 25px;
+    background: #0096F8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #55BCFF;
+}
+
+/* services.html */
+
+#service{
+	margin-left: 5%;
+	margin-right: 1%;
+	line-height: 1.8rem;
+}
+
+.service{
+	text-align: center;
+	padding-top: 100px;
+}
+
+.container1 ,.container2 ,.container3 ,.container4{
+	display: flex;
+}
+
+.card{
+	flex: 1;
+	background-color: #fff;
+	padding: 30px 20px;
+	border: none;
+	border-radius: 20px;
+	margin-right: 60px;
+	margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+	transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h4{
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 775;
+}
+
+.card img{
+	width: 60px;
+	height: 60px;
+	margin-bottom: 15px;
+}
